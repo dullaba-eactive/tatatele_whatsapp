@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:whatsapp_account",
+ "creation": "2025-10-28 12:41:08.548828",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_7i9j",
+  "whatsapp_account",
+  "url",
+  "column_break_wzow",
+  "version",
+  "section_break_fwxr",
+  "token",
+  "section_break_sczk",
+  "phone_number_id",
+  "column_break_8pog",
+  "business_account_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_7i9j",
+   "fieldtype": "Section Break",
+   "label": "Tatatele Whatsapp Settings"
+  },
+  {
+   "description": "Ex : https://graph.facebook.com",
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Url"
+  },
+  {
+   "fieldname": "column_break_wzow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Ex v15.0",
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Version"
+  },
+  {
+   "fieldname": "section_break_fwxr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Token"
+  },
+  {
+   "fieldname": "section_break_sczk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "phone_number_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Phone Number Id"
+  },
+  {
+   "fieldname": "column_break_8pog",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_account_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Business Account Id"
+  },
+  {
+   "fieldname": "whatsapp_account",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Whatsapp Account",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-28 13:00:35.721666",
+ "modified_by": "Administrator",
+ "module": "Tatatele Whatsapp",
+ "name": "Tatatele Whatsapp Settings",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

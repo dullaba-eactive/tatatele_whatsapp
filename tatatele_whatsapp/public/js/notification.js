@@ -1,0 +1,26 @@
+frappe.ui.form.on('Notification', {
+	refresh(frm) {
+		// your code here   
+        console.log("HEllo");
+	},
+	
+	document_type: function(frm) {
+        console.log("Hy");
+        frm.doc.tatatele_template_fields = "";
+	    frm.refresh_field("tatatele_template_fields");
+
+	    var str = "name\n";
+	    var doc_fields = frappe.get_meta(frm.doc.document_type).fields;
+	    doc_fields.forEach(element => {
+	        if(element.fieldtype == "Section Break" || element.fieldtype == "Column Break"){
+	            
+	        }else{
+    	        str = str + element.fieldname + "\n"    
+	        }
+	        
+	    });
+	    var df = frappe.meta.get_docfield("Tatatele Whatsapp Template Fields","field_name", cur_frm.doc.name);
+	    df.options = str;
+	    
+	}
+})

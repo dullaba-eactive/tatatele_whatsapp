@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:template_name",
+ "creation": "2025-10-28 13:55:24.054611",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "detail_section",
+  "template_name",
+  "template",
+  "attach_document",
+  "category",
+  "language",
+  "header",
+  "footer",
+  "for_report",
+  "whatsapp_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "detail_section",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "label": "Template Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Long Text",
+   "label": "Template"
+  },
+  {
+   "default": "0",
+   "fieldname": "attach_document",
+   "fieldtype": "Check",
+   "label": "Attach Document"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Transactional\nMarketing\nOne Time Password"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Data",
+   "label": "Language"
+  },
+  {
+   "fieldname": "header",
+   "fieldtype": "Data",
+   "label": "Header"
+  },
+  {
+   "fieldname": "footer",
+   "fieldtype": "Data",
+   "label": "Footer"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_report",
+   "fieldtype": "Check",
+   "label": "For Report"
+  },
+  {
+   "fieldname": "whatsapp_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "WhatsApp Account",
+   "options": "Tatatele Whatsapp Settings",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-28 16:16:42.632736",
+ "modified_by": "Administrator",
+ "module": "Tatatele Whatsapp",
+ "name": "Tatatele Whatsapp Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
