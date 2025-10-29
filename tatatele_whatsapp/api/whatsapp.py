@@ -3,7 +3,7 @@ import json
 from frappe.integrations.utils import make_post_request
 from frappe.utils import random_string
 from frappe.utils.file_manager import save_file
-from frappe.core.doctype.file.file import create_new_folder
+from frappe.core.api.file import create_new_folder
 
 def send_whatsapp_msg(doc, notification, receivers):
     try:
@@ -102,7 +102,7 @@ def whatsapp_template(receiver, doc, notification, document_link):
         payload['template']['components'].append(document_header)
     
     body_parameters = []
-    for field in notification.tatatele_template_fields:
+    for field in notification.custom_tatatele_whatsapp_template_fields:
         if field.field_type == "Date":
             body_parameters.append(
                     {

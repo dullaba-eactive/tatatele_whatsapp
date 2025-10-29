@@ -252,7 +252,8 @@ fixtures = [
 						"custom_whatsapp_template",
 						"custom_whatsapp_template_name",
 						"custom_whatsapp_account",
-						"tatatele_template_fields"
+						"custom_tatatele_whatsapp_template_fields"
+						
 					)
 			]
 		]
