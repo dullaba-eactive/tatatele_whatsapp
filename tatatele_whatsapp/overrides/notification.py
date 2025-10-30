@@ -24,6 +24,9 @@ class SendNotification(Notification):
         try:
             if self.channel == 'WhatsApp':
                 receivers = self.get_receiver_list(doc, context)
+                for idx, r in enumerate(receivers):
+                    if len(r) == 10:
+                        receivers[idx] = f"91{r}"
                 frappe.log_error("Receivers",receivers)
                 send_whatsapp_msg(doc, self, receivers)
         except:
