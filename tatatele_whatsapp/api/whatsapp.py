@@ -93,7 +93,7 @@ def whatsapp_template(receiver, doc, notification, document_link):
                         {
                             "type": "document",
                             "document": {
-                                "link": "https://s3-prod-smartflo-uploads.s3.ap-south-1.amazonaws.com/pdf/pdf_1677828037427_smartflo.pdf",
+                                "link": document_link,
                                 "filename": document_caption
                             }
                         }
